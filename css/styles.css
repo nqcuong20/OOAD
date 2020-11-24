@@ -6075,7 +6075,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #bd5d38 !important;
+  background-color: #e74c3c !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -10116,3 +10116,40 @@ img.nen {
   height: 700px;
   background-size: cover;
 }
+.nutlentren
+{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    color: white;
+    background-color: #e74c3c;
+    padding: 14px;
+    border-radius: 5px 5px 0px 0px;
+    cursor: pointer;
+}
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 64px;
+  height: 64px;
+  z-index: 9999;
+  cursor: pointer;
+  text-decoration: none;
+  transition: opacity 0.2s ease-out;
+  background-color: #e74c3c;
+  text-align: center;
+ justify-content: center;
+text-decoration: none;
+ }
+ 
+ .back-to-top:hover{
+  opacity: 0.7;
+ }
+ .muiten {
+  position: absolute;
+  top: 19px;
+  font-size: 28px;
+  color: white;
+  left: 21px;
+ }
