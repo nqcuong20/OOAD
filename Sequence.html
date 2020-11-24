@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Resume - Start Bootstrap Theme</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">Clarence Taylor</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="" /></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="USE Case.html">UseCase</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Sequence.html">SEQUENCE DIAGRAM</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- About-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <h1 class="mb-0">
+                        SEQUENCE
+                        <span class="text-primary">Diagram</span>
+                    </h1>
+                    <div class="subheading mb-5">
+                        <!-- <img src="img/usecase.png"  class="nen" alt=""> -->
+                    </div>
+                    <ul>
+                        <b>Mô tả ngữ cảnh cài đặt: </b>  
+                        <li class="nav-item"> Độc giả khi vào trang web hệ thống có thể tìm kiếm sách thông tin. </li>
+                        <li class="nav-item">Độc giả muốn mượn sách thì chọn sách muốn mượn, chọn chi nhánh và xác nhận mượn, nếu chưa đăng nhập thì chuyển sang màn hình yêu cầu độc giả đăng nhập. </li>
+                        <li class="nav-item">Hệ thống sẽ kiểm tra thông tin tài khoản và điều kiện mượn của từng tài khoản (Đối với sinh viên sẽ bị giới hạn thời gian mượn sách là 7 ngày. Giảng viên thì không có giới hạn về thời gian nhưng chỉ được mượn tối đa 5 quyển trong một năm. Còn độc giả khác thì chỉ được mượn tối đa 7 ngày và không được mượn quá 3 quyển.)</li>
+                        <li class="nav-item">Nếu thỏa điều kiện thì thông báo mượn thành công, ngược lại thì thông báo lỗi cụ thể ra màn hình.</li>
+                
+                </ul>
+                </div>
+            </section>
+            
+            <hr class="m-0" />
+            <!-- Experience-->
+            <section class="resume-section" id="experience">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Experience</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <img src="img/qlm.png" class="nen" alt="">
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+
+            <section class="resume-section" id="experience">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Experience</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <!-- <img src="img/ms.png" class="nen" alt=""> -->
+                            <a data-fslightbox="first-lightbox" href="img/ms.png" class="nen"></a>
+                            <!-- <a data-fslightbox="second-lightbox" href="/img/2.jpg">Second Lightbox</a> -->
+
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+           
+           
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="fslightbox.min.js"></script>
+        <script>
+            fsLightboxInstances['first-lightbox'].open(0);
+            fsLightboxInstances['second-lightbox'].props.onOpen = () => console.log('Lightbox open!');
+            </script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
