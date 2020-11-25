@@ -10117,6 +10117,7 @@ section.resume-section .resume-section-content {
 img.nen {
   height: 700px;
   background-size: cover;
+  display: block; margin-left: auto; margin-right: auto;
 }
 .nutlentren
 {
