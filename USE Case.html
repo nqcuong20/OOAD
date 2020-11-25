@@ -775,52 +775,52 @@
 
 
             <!-- Trả Sách -->
-            <section class="resume-section" id="interests">
+            <section class="resume-section" id="trasach">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">USE CASE: Đăng nhập</h2>
+                    <h2 class="mb-5">USE CASE: Trả Sách</h2>
                     <table class="table table-bordered">
                         <thead class="thead-dark">
                           <tr>
-                            <th scope="col">Use Case Name: Đăng nhập</th>
-                            <th scope="col">ID: UC01</th>
-                            <th scope="col">Importance level: cao</th>
+                            <th scope="col">Use Case Name: Trả sách</th>
+                            <th scope="col">ID: UC10</th>
+                            <th scope="col">Importance level: trung bình</th>
                             <!-- <th scope="col">Handle</th> -->
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
                             <!-- <th scope="row">1</th> -->
-                            <td>Primary Actor: Độc giả , Người quản lý, Quản thư</td>
+                            <td>Primary Actor: Độc giả , Quản thư</td>
                             <td colspan="2">Use Case Type:  Chi tiết, cần thiết</td>
                             <!-- <td>@mdo</td> -->
                           </tr>
                           <tr>
                             <td scope="row" colspan="3"> <b>Stackholders & Interests:</b>  
                                 <br>
-                                Độc giả – thực hiện quá trình nhập username, password để đăng nhập vào hệ thống thư viện
+                                Độc giả – thực hiện quá trình trả sách đã  mượn
                             </td>
                           </tr>
                           <tr>
                             <td scope="row" colspan="3">
                                 <b>  Brief Description: </b>
                                 <br>
-                                Use case này mô tả cách độc giả đăng nhập vào hệ thống
+                                Use case này mô tả việc độc giả trả sách đã mượn của thư viện
                             </td>
                           </tr>
                           <tr>
                             <td scope="row" colspan="3">
-                               <b>Trigger:</b>  Độc giả truy cập vào trang web của hệ thống
+                               <b>Trigger:</b>  Độc giả mượn sách của thư viện
                                 <br>
-                                <b>Type:</b>  External
+                                <b>Type:</b>  Internal
                             </td>
                           </tr>
                           <tr>
                             <td scope="row" colspan="3">
                                 <b>Relationship:</b>  
                                  <br>
-                                 <li class="nav-item">Association: Độc giả</li>  
-                                  <li class="nav-item">Include: (none) </li> 
-                                  <li class="nav-item">Extend: Đăng xuất, xử lý lỗi đăng nhập</li> 
+                                 <li class="nav-item">Association: Độc giả, Quản thư</li>  
+                                  <li class="nav-item">Include: Quét mã vạch</li> 
+                                  <li class="nav-item">Extend: (none)</li> 
                                   <li class="nav-item">Generalization: (none)</li> 
                              </td>
                           </tr>
@@ -828,18 +828,19 @@
                             <td scope="row" colspan="3">
                                 <b>Normal Flow of Events:</b>  
                                  <br>
-                                 <li class="nav-item">1.	Form đăng nhập hiện ra, yêu cầu độc giả nhập thông tin và đăng nhập, sau đó click vào button “Đăng nhập”</li>  
-                                  <li class="nav-item">2.	Hệ thống sẽ thực hiện use case “ Đăng nhập ” tiến hành đăng nhập</li> 
-                                  <li class="nav-item">3.	Hệ thống hiện thị các chức năng mà khách hàng được phép thao tác</li> 
+                                1. Độc giả cung cấp thông tin phiếu mượn sách cho thủ thư
+                                <br>
+                                2.	Thủ thư chọn chức năng “Kích hoạt trả sách” và nhập thông tin phiếu mượn sách do người dùng cung cấp.
+                                <br>
+                                3.	Thủ thư chọn “Kích hoạt”: hệ thống sẽ cập nhật lại số lượng sách trong kho và cập nhật trạng thái phiếu mượn của độc giả là “Đã Trả”. 
                              </td>
                           </tr>
                           <tr>
                             <td scope="row" colspan="3">
                                 <b>Alternate/Exceptional flows:</b>  
                                  <br>
-                                 <li class="nav-item">Nếu độc giả nhập sai thông tin thì hiển thị thông báo yêu cầu đăng nhập lại</li>  
-                                  <li class="nav-item">Nếu độc giả không muốn đăng nhập thì có thể chọn thoát(nút thoát). </li> 
-                                  <li class="nav-item">Nếu độc giả chưa có tài khoản có thể chọn chức năng đăng ký(nút đăng ký).</li> 
+                                 <li class="nav-item">Độc giả trả sách bị trễ hạn sẽ bị cấm mượn sách tương ứng với số ngày đã mượn trễ</li>  
+                                  
                              </td>
                           </tr>
                     
@@ -885,41 +886,41 @@
             <hr class="m-0" />
 
             <!-- Quét Mã Vạch -->
-            <section class="resume-section" id="interests">
+            <section class="resume-section" id="quetmavach">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">USE CASE: Đăng nhập</h2>
+                    <h2 class="mb-5">USE CASE: Quét Mã Vạch</h2>
                     <table class="table table-bordered">
                         <thead class="thead-dark">
                           <tr>
-                            <th scope="col">Use Case Name: Đăng nhập</th>
-                            <th scope="col">ID: UC01</th>
-                            <th scope="col">Importance level: cao</th>
+                            <th scope="col">Use Case Name:  Quét mã vạch</th>
+                            <th scope="col">ID: UC12</th>
+                            <th scope="col">Importance level: trung bình</th>
                             <!-- <th scope="col">Handle</th> -->
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
                             <!-- <th scope="row">1</th> -->
-                            <td>Primary Actor: Độc giả , Người quản lý, Quản thư</td>
+                            <td>Primary Actor: Quản thư</td>
                             <td colspan="2">Use Case Type:  Chi tiết, cần thiết</td>
                             <!-- <td>@mdo</td> -->
                           </tr>
                           <tr>
                             <td scope="row" colspan="3"> <b>Stackholders & Interests:</b>  
                                 <br>
-                                Độc giả – thực hiện quá trình nhập username, password để đăng nhập vào hệ thống thư viện
+                                Quản thư quét mã vạch của quyển sách khi độ giả mượn, trả sách
                             </td>
                           </tr>
                           <tr>
                             <td scope="row" colspan="3">
                                 <b>  Brief Description: </b>
                                 <br>
-                                Use case này mô tả cách độc giả đăng nhập vào hệ thống
+                                Use case này mô tả việc quản thư quét mã vạch khi độc giả mượn và trả sách tại chi nhánh
                             </td>
                           </tr>
                           <tr>
                             <td scope="row" colspan="3">
-                               <b>Trigger:</b>  Độc giả truy cập vào trang web của hệ thống
+                               <b>Trigger:</b>  Độc giả có tài khoản độc giả trong thư viện
                                 <br>
                                 <b>Type:</b>  External
                             </td>
@@ -928,9 +929,9 @@
                             <td scope="row" colspan="3">
                                 <b>Relationship:</b>  
                                  <br>
-                                 <li class="nav-item">Association: Độc giả</li>  
+                                 <li class="nav-item">Association: Quản thư</li>  
                                   <li class="nav-item">Include: (none) </li> 
-                                  <li class="nav-item">Extend: Đăng xuất, xử lý lỗi đăng nhập</li> 
+                                  <li class="nav-item">Extend: (none)</li> 
                                   <li class="nav-item">Generalization: (none)</li> 
                              </td>
                           </tr>
@@ -938,18 +939,18 @@
                             <td scope="row" colspan="3">
                                 <b>Normal Flow of Events:</b>  
                                  <br>
-                                 <li class="nav-item">1.	Form đăng nhập hiện ra, yêu cầu độc giả nhập thông tin và đăng nhập, sau đó click vào button “Đăng nhập”</li>  
-                                  <li class="nav-item">2.	Hệ thống sẽ thực hiện use case “ Đăng nhập ” tiến hành đăng nhập</li> 
-                                  <li class="nav-item">3.	Hệ thống hiện thị các chức năng mà khách hàng được phép thao tác</li> 
+                                1.	Khi độc giả muốn mượn và trả sách tại chi nhánh, quản thư thực hiện việc quét mã vạch của quyển sách đó
+                                <br> 
+                                2.	Thông tin quyển sách hiện thị trên hệ thống sau khi quét mã vạch
+                                <br>
+                                3.	Quản thư dựa vào thông tin đó để tiến hành lập phiếu mượn hoặc cập nhật phiếu mượn khi độc giả trả sách 
                              </td>
                           </tr>
                           <tr>
                             <td scope="row" colspan="3">
                                 <b>Alternate/Exceptional flows:</b>  
                                  <br>
-                                 <li class="nav-item">Nếu độc giả nhập sai thông tin thì hiển thị thông báo yêu cầu đăng nhập lại</li>  
-                                  <li class="nav-item">Nếu độc giả không muốn đăng nhập thì có thể chọn thoát(nút thoát). </li> 
-                                  <li class="nav-item">Nếu độc giả chưa có tài khoản có thể chọn chức năng đăng ký(nút đăng ký).</li> 
+                                 <li class="nav-item">(none)</li> 
                              </td>
                           </tr>
                     
@@ -963,14 +964,14 @@
             <hr class="m-0" />
 
             <!-- Quản Lý Độc Giả -->
-            <section class="resume-section" id="interests">
+            <section class="resume-section" id="quanlydocgia">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">USE CASE: Đăng nhập</h2>
+                    <h2 class="mb-5">USE CASE: Quản Lý Độc Giả</h2>
                     <table class="table table-bordered">
                         <thead class="thead-dark">
                           <tr>
-                            <th scope="col">Use Case Name: Đăng nhập</th>
-                            <th scope="col">ID: UC01</th>
+                            <th scope="col">Use Case Name: Quản lý độc giả</th>
+                            <th scope="col">ID: UC11</th>
                             <th scope="col">Importance level: cao</th>
                             <!-- <th scope="col">Handle</th> -->
                           </tr>
@@ -978,37 +979,37 @@
                         <tbody>
                           <tr>
                             <!-- <th scope="row">1</th> -->
-                            <td>Primary Actor: Độc giả , Người quản lý, Quản thư</td>
+                            <td>Primary Actor:  Quản thư</td>
                             <td colspan="2">Use Case Type:  Chi tiết, cần thiết</td>
                             <!-- <td>@mdo</td> -->
                           </tr>
                           <tr>
                             <td scope="row" colspan="3"> <b>Stackholders & Interests:</b>  
                                 <br>
-                                Độc giả – thực hiện quá trình nhập username, password để đăng nhập vào hệ thống thư viện
+                                Quản thư sử dụng chức năng quản lý độc giả trên hệ thống
                             </td>
                           </tr>
                           <tr>
                             <td scope="row" colspan="3">
                                 <b>  Brief Description: </b>
                                 <br>
-                                Use case này mô tả cách độc giả đăng nhập vào hệ thống
+                                Use case này mô tả việc quản thư quản lý độc giả bằng việc thêm, xóa, xử lý vi phạm
                             </td>
                           </tr>
                           <tr>
                             <td scope="row" colspan="3">
-                               <b>Trigger:</b>  Độc giả truy cập vào trang web của hệ thống
+                               <b>Trigger:</b>  Quản thư đăng nhập tài khoản
                                 <br>
-                                <b>Type:</b>  External
+                                <b>Type:</b>  Internal
                             </td>
                           </tr>
                           <tr>
                             <td scope="row" colspan="3">
                                 <b>Relationship:</b>  
                                  <br>
-                                 <li class="nav-item">Association: Độc giả</li>  
-                                  <li class="nav-item">Include: (none) </li> 
-                                  <li class="nav-item">Extend: Đăng xuất, xử lý lỗi đăng nhập</li> 
+                                 <li class="nav-item">Association: Quản thư</li>  
+                                  <li class="nav-item">Include: Đăng nhập </li> 
+                                  <li class="nav-item">Extend: (none)</li> 
                                   <li class="nav-item">Generalization: (none)</li> 
                              </td>
                           </tr>
@@ -1016,18 +1017,33 @@
                             <td scope="row" colspan="3">
                                 <b>Normal Flow of Events:</b>  
                                  <br>
-                                 <li class="nav-item">1.	Form đăng nhập hiện ra, yêu cầu độc giả nhập thông tin và đăng nhập, sau đó click vào button “Đăng nhập”</li>  
-                                  <li class="nav-item">2.	Hệ thống sẽ thực hiện use case “ Đăng nhập ” tiến hành đăng nhập</li> 
-                                  <li class="nav-item">3.	Hệ thống hiện thị các chức năng mà khách hàng được phép thao tác</li> 
+                                1.	Quản thư thêm tài khoản độc giả
+                                <br>
+                                 <li class="nav-item">Quản thư chọn chức năng thêm độc giả.</li> 
+                                 <li class="nav-item">Hệ thống hiển thị giao diện chứa chức năng thêm độc giả.</li>  
+                                 <li class="nav-item">Quản thư nhập thông tin của độc giả: mã độc giả , họ tên, ngày sinh, địa chỉ, , mã chức vụ, SĐT và chọn lưu thông tin</li>  
+                                 <li class="nav-item">Hệ thống kiểm tra và xác nhận sự hợp lệ của thông tin đưa vào, lưu thông tin độc giả vào hệ thống.</li>    
+                                2.	Quản thư xóa tài khoản độc giả
+                                <br>
+                                  <li class="nav-item">Quản thư chọn chức năng xóa độc giả.</li>  
+                                 <li class="nav-item">Hệ thống hiển thị giao diện chứa danh sách các độc giả.</li>
+                                 <li class="nav-item">Quản thư chọn độc giả cần xóa.</li>  
+                                 <li class="nav-item">Hệ thống xác nhận và xóa độc giả khỏi hệ thống.</li>
+                                3.	Quản thư xử lý vi phạm của độc giả
+                                <br>
+                                 <li class="nav-item">Quản thư chọn chức năng quản lý độc giả và chọn phần xử lý vi phạm.</li>  
+                                 <li class="nav-item">Hệ thống hiển thị giao diện xử lý độc giả vi phạm.</li>
+                                 <li class="nav-item">Thủ thư kiểm tra phiếu mượn và nhập lý do vi phạm và hình thức xử phạt</li>  
+                                 <li class="nav-item">Hệ thống cập nhật lại thông tin độc giả vi phạm.</li>
                              </td>
                           </tr>
                           <tr>
                             <td scope="row" colspan="3">
                                 <b>Alternate/Exceptional flows:</b>  
                                  <br>
-                                 <li class="nav-item">Nếu độc giả nhập sai thông tin thì hiển thị thông báo yêu cầu đăng nhập lại</li>  
-                                  <li class="nav-item">Nếu độc giả không muốn đăng nhập thì có thể chọn thoát(nút thoát). </li> 
-                                  <li class="nav-item">Nếu độc giả chưa có tài khoản có thể chọn chức năng đăng ký(nút đăng ký).</li> 
+                                 <li class="nav-item">Thủ thư hủy bỏ việc thêm, xóa,  xử lý độc giả vi phạm. Hệ thống bỏ qua giao diện và trở về giao diện chính.</li>  
+                                  <li class="nav-item">Hệ thống báo lỗi trong quá trình xử lý xóa. Hệ thống hiển thị thông báo lỗi.</li> 
+                                  <li class="nav-item">Thông tin quản thư đưa vào không hợp lệ. Hệ thống hiển thị thông báo lỗi.</li> 
                              </td>
                           </tr>
                     
@@ -1041,14 +1057,14 @@
             <hr class="m-0" />
 
             <!-- Phân Bố Sách -->
-            <section class="resume-section" id="interests">
+            <section class="resume-section" id="phanbosach">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">USE CASE: Đăng nhập</h2>
+                    <h2 class="mb-5">USE CASE: Phân Bố Sách</h2>
                     <table class="table table-bordered">
                         <thead class="thead-dark">
                           <tr>
-                            <th scope="col">Use Case Name: Đăng nhập</th>
-                            <th scope="col">ID: UC01</th>
+                            <th scope="col">Use Case Name: Phân bố sách</th>
+                            <th scope="col">ID: UC14</th>
                             <th scope="col">Importance level: cao</th>
                             <!-- <th scope="col">Handle</th> -->
                           </tr>
@@ -1056,26 +1072,26 @@
                         <tbody>
                           <tr>
                             <!-- <th scope="row">1</th> -->
-                            <td>Primary Actor: Độc giả , Người quản lý, Quản thư</td>
+                            <td>Primary Actor: Người quản lý</td>
                             <td colspan="2">Use Case Type:  Chi tiết, cần thiết</td>
                             <!-- <td>@mdo</td> -->
                           </tr>
                           <tr>
                             <td scope="row" colspan="3"> <b>Stackholders & Interests:</b>  
                                 <br>
-                                Độc giả – thực hiện quá trình nhập username, password để đăng nhập vào hệ thống thư viện
+                                Người quản lý sử dụng thực hiện việc phân bố sách tới các chi nhánh
                             </td>
                           </tr>
                           <tr>
                             <td scope="row" colspan="3">
                                 <b>  Brief Description: </b>
                                 <br>
-                                Use case này mô tả cách độc giả đăng nhập vào hệ thống
+                                Use case này mô tả việc người quản lý phân bố sách trong chi nhánh trên hệ thống
                             </td>
                           </tr>
                           <tr>
                             <td scope="row" colspan="3">
-                               <b>Trigger:</b>  Độc giả truy cập vào trang web của hệ thống
+                               <b>Trigger:</b>  Người quản lý thực hiên đăng nhập tài khoản
                                 <br>
                                 <b>Type:</b>  External
                             </td>
@@ -1084,9 +1100,9 @@
                             <td scope="row" colspan="3">
                                 <b>Relationship:</b>  
                                  <br>
-                                 <li class="nav-item">Association: Độc giả</li>  
-                                  <li class="nav-item">Include: (none) </li> 
-                                  <li class="nav-item">Extend: Đăng xuất, xử lý lỗi đăng nhập</li> 
+                                 <li class="nav-item">Association: Người quản lý</nav></li>  
+                                  <li class="nav-item">Include: Đăng nhập </li> 
+                                  <li class="nav-item">Extend: (none)</li> 
                                   <li class="nav-item">Generalization: (none)</li> 
                              </td>
                           </tr>
@@ -1094,18 +1110,18 @@
                             <td scope="row" colspan="3">
                                 <b>Normal Flow of Events:</b>  
                                  <br>
-                                 <li class="nav-item">1.	Form đăng nhập hiện ra, yêu cầu độc giả nhập thông tin và đăng nhập, sau đó click vào button “Đăng nhập”</li>  
-                                  <li class="nav-item">2.	Hệ thống sẽ thực hiện use case “ Đăng nhập ” tiến hành đăng nhập</li> 
-                                  <li class="nav-item">3.	Hệ thống hiện thị các chức năng mà khách hàng được phép thao tác</li> 
+                                1.	Chọn chức năng “Phân bố sách”: hệ thống sẽ hiển thị các phân bố sách có trong database
+                                <br>
+                                2.	Người quản lý nhập sách mới hoặc sửa phân bố sách hoặc xóa sách tại chi nhánh. 
+                                  
                              </td>
                           </tr>
                           <tr>
                             <td scope="row" colspan="3">
                                 <b>Alternate/Exceptional flows:</b>  
                                  <br>
-                                 <li class="nav-item">Nếu độc giả nhập sai thông tin thì hiển thị thông báo yêu cầu đăng nhập lại</li>  
-                                  <li class="nav-item">Nếu độc giả không muốn đăng nhập thì có thể chọn thoát(nút thoát). </li> 
-                                  <li class="nav-item">Nếu độc giả chưa có tài khoản có thể chọn chức năng đăng ký(nút đăng ký).</li> 
+                                 <li class="nav-item">Người quản lý hủy bỏ việc phân bố sách. Hệ thống bỏ qua giao diện phân bố sách và trở về giao diện chính.</li>  
+                                  
                              </td>
                           </tr>
                     
@@ -1119,14 +1135,14 @@
             <hr class="m-0" />
 
             <!-- Quản Lý Sách -->
-            <section class="resume-section" id="interests">
+            <section class="resume-section" id="quanlysach">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">USE CASE: Đăng nhập</h2>
+                    <h2 class="mb-5">USE CASE: Quản Lý Sách</h2>
                     <table class="table table-bordered">
                         <thead class="thead-dark">
                           <tr>
-                            <th scope="col">Use Case Name: Đăng nhập</th>
-                            <th scope="col">ID: UC01</th>
+                            <th scope="col">Use Case Name: Quản lý sách</th>
+                            <th scope="col">ID: UC13</th>
                             <th scope="col">Importance level: cao</th>
                             <!-- <th scope="col">Handle</th> -->
                           </tr>
@@ -1134,37 +1150,37 @@
                         <tbody>
                           <tr>
                             <!-- <th scope="row">1</th> -->
-                            <td>Primary Actor: Độc giả , Người quản lý, Quản thư</td>
+                            <td>Primary Actor:  Người quản lý</td>
                             <td colspan="2">Use Case Type:  Chi tiết, cần thiết</td>
                             <!-- <td>@mdo</td> -->
                           </tr>
                           <tr>
                             <td scope="row" colspan="3"> <b>Stackholders & Interests:</b>  
                                 <br>
-                                Độc giả – thực hiện quá trình nhập username, password để đăng nhập vào hệ thống thư viện
+                                Người quản lý thêm, xóa, sửa sách trên hệ thống
                             </td>
                           </tr>
                           <tr>
                             <td scope="row" colspan="3">
                                 <b>  Brief Description: </b>
                                 <br>
-                                Use case này mô tả cách độc giả đăng nhập vào hệ thống
+                                Use case này mô tả việc quản thư quản lý sách trong hệ thống
                             </td>
                           </tr>
                           <tr>
                             <td scope="row" colspan="3">
-                               <b>Trigger:</b>  Độc giả truy cập vào trang web của hệ thống
+                               <b>Trigger:</b>  Đăng nhập tài khoản của người quản lý
                                 <br>
-                                <b>Type:</b>  External
+                                <b>Type:</b>  Internal
                             </td>
                           </tr>
                           <tr>
                             <td scope="row" colspan="3">
                                 <b>Relationship:</b>  
                                  <br>
-                                 <li class="nav-item">Association: Độc giả</li>  
-                                  <li class="nav-item">Include: (none) </li> 
-                                  <li class="nav-item">Extend: Đăng xuất, xử lý lỗi đăng nhập</li> 
+                                 <li class="nav-item">Association: Người quản lý</li>  
+                                  <li class="nav-item">Include: Đăng nhập </li> 
+                                  <li class="nav-item">Extend: (none)</li> 
                                   <li class="nav-item">Generalization: (none)</li> 
                              </td>
                           </tr>
@@ -1172,18 +1188,35 @@
                             <td scope="row" colspan="3">
                                 <b>Normal Flow of Events:</b>  
                                  <br>
-                                 <li class="nav-item">1.	Form đăng nhập hiện ra, yêu cầu độc giả nhập thông tin và đăng nhập, sau đó click vào button “Đăng nhập”</li>  
-                                  <li class="nav-item">2.	Hệ thống sẽ thực hiện use case “ Đăng nhập ” tiến hành đăng nhập</li> 
-                                  <li class="nav-item">3.	Hệ thống hiện thị các chức năng mà khách hàng được phép thao tác</li> 
+                                1.	Người quản lý thêm sách
+                                <br>
+                                 <li class="nav-item">Quản lí chọn chức năng thêm sách </li> 
+                                 <li class="nav-item">Hệ thống hiển thị giao diện thêm sách </li>  
+                                 <li class="nav-item">Nhập các thông tin: mã sách, tên sách, nhà xuất bản, tác giả, năm xuất bản, số lần tái bản…..</li>  
+                                 <li class="nav-item">Hệ thống kiểm tra sự hợp lệ của thông tin đưa vào, xác nhận và lưu thông tin vào hệ thống.</li>   
+                                2.	Người quản lý chỉnh sửa thông tin sách
+                                <br>
+                                  <li class="nav-item">	Quản lí chọn chức năng sửa thông tin sách.</li>  
+                                  <li class="nav-item">	Hệ thống hiển thị giao diện chứa danh sách sách</li>  
+                                  <li class="nav-item">	Quản lí chọn sách cần sửa.</li>  
+                                  <li class="nav-item">	Thay đổi các thông tin: mã sách, tên sách, nhà xuất bản, tác giả, năm xuất bản, số lần tái bản….. của sách đang chọn.</li>  
+                                  <li class="nav-item">	Hệ thống kiểm tra sự hợp lệ của thông tin đưa vào, xác nhận và lưu thông tin thay đổi vào hệ thống.</li>  
+                                3.	Người quản lý xóa sách
+                                <br>
+                                  <li class="nav-item">Quản lí chọn chức năng xóa sách.</li>  
+                                  <li class="nav-item">	Hệ thống hiển thị giao diện chứa danh sách sách.</li>  
+                                  <li class="nav-item">	Quản lí chọn sách cần xóa.</li>  
+                                  <li class="nav-item">	Hệ thống xác nhận và xóa sách đó ra khỏi hệ thống.</li>  
                              </td>
                           </tr>
                           <tr>
                             <td scope="row" colspan="3">
                                 <b>Alternate/Exceptional flows:</b>  
                                  <br>
-                                 <li class="nav-item">Nếu độc giả nhập sai thông tin thì hiển thị thông báo yêu cầu đăng nhập lại</li>  
-                                  <li class="nav-item">Nếu độc giả không muốn đăng nhập thì có thể chọn thoát(nút thoát). </li> 
-                                  <li class="nav-item">Nếu độc giả chưa có tài khoản có thể chọn chức năng đăng ký(nút đăng ký).</li> 
+                                 <li class="nav-item">Quản lí hủy bỏ việc thêm, xóa, sửa thông tin sách. Hệ thống bỏ qua giao diện và trở về giao diện chính.</li>
+                                 <li class="nav-item">Hệ thống xảy ra lỗi trong quá trình thêm tài liệu. Hệ thống hiển thị thông báo lỗi.</li>  
+                                 <li class="nav-item">	Hệ thống xảy ra lỗi trong quá trình xử lý dữ liệu. Hệ thống hiển thị thông báo lỗi.</li>  
+                                 <li class="nav-item">Thông tin nhập vào không hợp lệ. Hệ thống hiển thị thông báo lỗi.</li>    
                              </td>
                           </tr>
                     
@@ -1197,41 +1230,41 @@
             <hr class="m-0" />
 
             <!-- Xem Thống Kê Và Yêu Cầu Mua Sách -->
-            <section class="resume-section" id="interests">
+            <section class="resume-section" id="xemthongkeyeucaumuasach">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">USE CASE: Đăng nhập</h2>
+                    <h2 class="mb-5">USE CASE: Xem Thống Kê Và Yêu Cầu Mua Sách</h2>
                     <table class="table table-bordered">
                         <thead class="thead-dark">
                           <tr>
-                            <th scope="col">Use Case Name: Đăng nhập</th>
-                            <th scope="col">ID: UC01</th>
-                            <th scope="col">Importance level: cao</th>
+                            <th scope="col">Use Case Name: Xem thống kê yêu cầu mua sách</th>
+                            <th scope="col">ID: UC15</th>
+                            <th scope="col">Importance level: trung bình</th>
                             <!-- <th scope="col">Handle</th> -->
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
                             <!-- <th scope="row">1</th> -->
-                            <td>Primary Actor: Độc giả , Người quản lý, Quản thư</td>
+                            <td>Primary Actor: Người quản lý</td>
                             <td colspan="2">Use Case Type:  Chi tiết, cần thiết</td>
                             <!-- <td>@mdo</td> -->
                           </tr>
                           <tr>
                             <td scope="row" colspan="3"> <b>Stackholders & Interests:</b>  
                                 <br>
-                                Độc giả – thực hiện quá trình nhập username, password để đăng nhập vào hệ thống thư viện
+                                Người quản lý sử dụng chức năng để xem, thống kê các yêu cầu mua sách từ độc giả
                             </td>
                           </tr>
                           <tr>
                             <td scope="row" colspan="3">
                                 <b>  Brief Description: </b>
                                 <br>
-                                Use case này mô tả cách độc giả đăng nhập vào hệ thống
+                                Use case này mô tả việc quản thư xem, thống kê yêu cầu mua sách trên hệ thống
                             </td>
                           </tr>
                           <tr>
                             <td scope="row" colspan="3">
-                               <b>Trigger:</b>  Độc giả truy cập vào trang web của hệ thống
+                               <b>Trigger:</b>  Người quản lý đăng nhập tài khoản trên hệ thống
                                 <br>
                                 <b>Type:</b>  External
                             </td>
@@ -1240,28 +1273,30 @@
                             <td scope="row" colspan="3">
                                 <b>Relationship:</b>  
                                  <br>
-                                 <li class="nav-item">Association: Độc giả</li>  
-                                  <li class="nav-item">Include: (none) </li> 
-                                  <li class="nav-item">Extend: Đăng xuất, xử lý lỗi đăng nhập</li> 
-                                  <li class="nav-item">Generalization: (none)</li> 
+                                 <li class="nav-item">Association: Người quản lý</li>  
+                                 <li class="nav-item">Include: Đăng nhập </li> 
+                                 <li class="nav-item">Extend: (none)</li> 
+                                 <li class="nav-item">Generalization: (none)</li>  
                              </td>
                           </tr>
                           <tr>
                             <td scope="row" colspan="3">
                                 <b>Normal Flow of Events:</b>  
                                  <br>
-                                 <li class="nav-item">1.	Form đăng nhập hiện ra, yêu cầu độc giả nhập thông tin và đăng nhập, sau đó click vào button “Đăng nhập”</li>  
-                                  <li class="nav-item">2.	Hệ thống sẽ thực hiện use case “ Đăng nhập ” tiến hành đăng nhập</li> 
-                                  <li class="nav-item">3.	Hệ thống hiện thị các chức năng mà khách hàng được phép thao tác</li> 
+                                 1.	Người quản lý chọn chức năng “Xem yêu cầu mua sách”
+                                 <br> 
+                                 2.	Hệ thống hiển thị màn hình danh sách các yêu cầu mua sách <br> 
+                                 3.	Hệ thống hiện thị các chức năng con như “Phân bố sách”, “Quản lý sách” , “Thông kê yêu cầu mua sách” xuất hiện. 
                              </td>
                           </tr>
                           <tr>
                             <td scope="row" colspan="3">
                                 <b>Alternate/Exceptional flows:</b>  
                                  <br>
-                                 <li class="nav-item">Nếu độc giả nhập sai thông tin thì hiển thị thông báo yêu cầu đăng nhập lại</li>  
-                                  <li class="nav-item">Nếu độc giả không muốn đăng nhập thì có thể chọn thoát(nút thoát). </li> 
-                                  <li class="nav-item">Nếu độc giả chưa có tài khoản có thể chọn chức năng đăng ký(nút đăng ký).</li> 
+                                 <li class="nav-item">Người quản lý hủy bỏ việc xem yêu cầu mua sách. Hệ thống bỏ qua giao diện xem yêu cầu mua sách và trở về giao diện chính.</li>  
+                                  <li class="nav-item">	Người quản lý chọn “Phân bố sách”, chuyển sang chức năng “Phân bố sách”. </li> 
+                                  <li class="nav-item">	Người quản lý chọn “Quản lý sách”, chuyển sang chức năng “Quản lý sách”.</li> 
+                                  <li class="nav-item">	Người quản lý chọn “Thống kê yêu cầu yêu cầu mua sách ”, chuyển sang chức năng “ Thống kê yêu cầu yêu cầu mua sách”.</li> 
                              </td>
                           </tr>
                     
@@ -1275,41 +1310,41 @@
             <hr class="m-0" />
 
             <!-- Yêu Cầu Mua Thêm Sách -->
-            <section class="resume-section" id="interests">
+            <section class="resume-section" id="yeucaumuathemsach">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">USE CASE: Đăng nhập</h2>
+                    <h2 class="mb-5">USE CASE: Yêu Cầu Mua Thêm Sách</h2>
                     <table class="table table-bordered">
                         <thead class="thead-dark">
                           <tr>
-                            <th scope="col">Use Case Name: Đăng nhập</th>
-                            <th scope="col">ID: UC01</th>
-                            <th scope="col">Importance level: cao</th>
+                            <th scope="col">Use Case Name: Yêu cầu mua thêm sách</th>
+                            <th scope="col">ID: UC09</th>
+                            <th scope="col">Importance level: trung bình</th>
                             <!-- <th scope="col">Handle</th> -->
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
                             <!-- <th scope="row">1</th> -->
-                            <td>Primary Actor: Độc giả , Người quản lý, Quản thư</td>
+                            <td>Primary Actor: Độc giả </td>
                             <td colspan="2">Use Case Type:  Chi tiết, cần thiết</td>
                             <!-- <td>@mdo</td> -->
                           </tr>
                           <tr>
                             <td scope="row" colspan="3"> <b>Stackholders & Interests:</b>  
                                 <br>
-                                Độc giả – thực hiện quá trình nhập username, password để đăng nhập vào hệ thống thư viện
+                                Độc giả – gửi yêu cầu mua thêm sách 
                             </td>
                           </tr>
                           <tr>
                             <td scope="row" colspan="3">
                                 <b>  Brief Description: </b>
                                 <br>
-                                Use case này mô tả cách độc giả đăng nhập vào hệ thống
+                                Use case này mô tả việc độc giả yêu cầu mua thêm sách
                             </td>
                           </tr>
                           <tr>
                             <td scope="row" colspan="3">
-                               <b>Trigger:</b>  Độc giả truy cập vào trang web của hệ thống
+                               <b>Trigger:</b>  Độc giả đã đăng nhập vào hệ thống
                                 <br>
                                 <b>Type:</b>  External
                             </td>
@@ -1319,8 +1354,8 @@
                                 <b>Relationship:</b>  
                                  <br>
                                  <li class="nav-item">Association: Độc giả</li>  
-                                  <li class="nav-item">Include: (none) </li> 
-                                  <li class="nav-item">Extend: Đăng xuất, xử lý lỗi đăng nhập</li> 
+                                  <li class="nav-item">Include: Đăng nhập </li> 
+                                  <li class="nav-item">Extend: (none)</li> 
                                   <li class="nav-item">Generalization: (none)</li> 
                              </td>
                           </tr>
@@ -1328,18 +1363,18 @@
                             <td scope="row" colspan="3">
                                 <b>Normal Flow of Events:</b>  
                                  <br>
-                                 <li class="nav-item">1.	Form đăng nhập hiện ra, yêu cầu độc giả nhập thông tin và đăng nhập, sau đó click vào button “Đăng nhập”</li>  
-                                  <li class="nav-item">2.	Hệ thống sẽ thực hiện use case “ Đăng nhập ” tiến hành đăng nhập</li> 
-                                  <li class="nav-item">3.	Hệ thống hiện thị các chức năng mà khách hàng được phép thao tác</li> 
+                                 1.	Độc giả chọn chức năng “Yêu cầu mua thêm sách”<br>  
+                                 2.	Màn hình yêu cầu mua thêm sách (chứa form thông tên quyển sách và tên tác giả) xuất hiện.<br> 
+                                 3.	Độc giả điền form và chọn “Yêu cầu”, hệ thống sẽ lưu lại yêu cầu mua sách của độc giả.
                              </td>
                           </tr>
                           <tr>
                             <td scope="row" colspan="3">
                                 <b>Alternate/Exceptional flows:</b>  
                                  <br>
-                                 <li class="nav-item">Nếu độc giả nhập sai thông tin thì hiển thị thông báo yêu cầu đăng nhập lại</li>  
-                                  <li class="nav-item">Nếu độc giả không muốn đăng nhập thì có thể chọn thoát(nút thoát). </li> 
-                                  <li class="nav-item">Nếu độc giả chưa có tài khoản có thể chọn chức năng đăng ký(nút đăng ký).</li> 
+                                 <li class="nav-item">	Độc giả hủy bỏ việc yêu cầu mua thêm sách. Hệ thống bỏ qua giao diện yêu cầu mua thêm sách và trở về giao diện chính.</li>  
+                                  <li class="nav-item">	Độc giả yêu cầu trùng sách đã yêu cầu trước đó: thông báo tài khoản đã có yêu cầu  </li> 
+                                  <li class="nav-item">	Sách yêu cầu đã có trên hệ thống: thông báo đã có sách trong thư viện</li> 
                              </td>
                           </tr>
                     
