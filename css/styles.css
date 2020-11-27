@@ -10156,3 +10156,8 @@ text-decoration: none;
   color: white;
   left: 20px;
  }
+
+ .demo {
+   width: 1100px;
+   height: auto;
+ }
